@@ -67,3 +67,25 @@ nav li:hover{
 .content #vendet p{
 	text-align: center;
 }
+footer{
+	margin-top: 20px;
+	margin-bottom: 0;
+	background-color: #32a88b;
+	height: 200px;
+}
+footer #logo-footer{
+	text-align: center;
+}
+footer #logo-footer img{
+	margin-top: 25px;
+	height: 75px;
+}
+footer #rrjetet-sociale img{
+	height: 40px;
+	margin-left: 25px;
+}
+footer #autori{
+	margin-left: 25px;
+	color: white;
+}
+
