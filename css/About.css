@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+.content-about{
+	margin-top: 70px;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.content-about #pyetja-titull{
+	text-align: center;
+	font-family: Kanit;
+}
+.content-about p{
+	margin-left: 120px;
+	margin-right: 120px;
+	text-align: center;
+}
+.content-about #flag{
+	display: flex;
+	margin-top: 100px;
+	margin-left: 120px;
+}
+.content-about #flag img{
+	height: 80px;
+	width: 125px;
+	margin-left:60px;
+}
+.content-about #flag h3{
+	margin-top: 30px;
+	font-family: Kanit;
+}
+.content-about #popullsia{
+	display: flex;
+	margin-left: 120px;
+}
+.content-about #popullsia h3{
+	font-family: Kanit;
+}
+.content-about #popullsia #numrat{
+	margin-left: 60px;
+}
+.content-about #siperfaqja{
+	display: flex;
+	margin-left: 120px;
+}
+.content-about #siperfaqja h3{
+	font-family: Kanit;
+}
+.content-about #siperfaqja #numrat{
+	margin-left: 77px;
+}

@@ -37,6 +37,13 @@ nav li{
 	font-family: Kanit;
 	border-radius: 9px;
 }
+nav li a{
+	text-decoration: none;
+	color:black;
+}
+nav li a:hover{
+	color:white;
+}
 nav li:hover{
 	background-color: black;
 	color: white;
