@@ -70,6 +70,36 @@ nav a li:hover{
 }
 .content #vendet p{
 	text-align: center;
+	font-family: Kanit;
+	margin-top: 7px;
+}
+.content #vendet a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.content #vendet2{
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-around;
+}
+.content #vendet2 img{
+	width: 350px;
+	height: 200px;
+}
+.content #vendet2 h3{
+	text-align: center;
+	font-family: Kanit;
+}
+.content #vendet2 p{
+	text-align: center;
+	font-family: Kanit;
+	margin-top: 7px;
+}
+.content #vendet2 a{
+	text-decoration: none;
+	color: black;
 }
 footer{
 	margin-top: 20px;
