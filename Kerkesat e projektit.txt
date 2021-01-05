@@ -1,0 +1,14 @@
+Kerkesat per fazen e pare te projektit:
+
+1. Webfaqja me i pas minimim 3 pages si p.sh: 
+	- Faqja Kryesore (Home);
+	- Products ;
+	- Contact (Se paku 5 input types) ;
+2. Login form (Login edhe Register - validim ne JS) ;
+3. Webfaqja te jete responsive (E pershtatshme se paku per dy device te ndryshem) ;
+4. Perdorimi i sliderit/gallery (Preferohet ne Home Page);
+5. Validimi i formave me JS (Login/register dhe contact format) 
+	(ne projekt lejohet me perdor jQuery, ValidateJS mirepo duhet qe patjeter
+	 me pas edhe Plain Javascript) ;
+
+PERDORIMI I GITIT ESHTE I OBLIGUAR!
