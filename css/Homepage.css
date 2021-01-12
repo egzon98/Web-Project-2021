@@ -58,6 +58,8 @@ nav a li:hover{
 }
 .content #vendet{
 	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
 	justify-content: space-around;
 }
 .content #vendet img{
@@ -82,6 +84,8 @@ nav a li:hover{
 .content #vendet2{
 	margin-top: 60px;
 	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
 	justify-content: space-around;
 }
 .content #vendet2 img{
