@@ -61,7 +61,7 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.acctive, .dot:hover {
   background-color: #717171;
 }
 
@@ -98,7 +98,7 @@
 			<div class="navbar-links">
 				<ul>
 					<li><a href="Homepage.html">HOME</a></li>
-					<li><a href="">PLACES</a></li>
+					<li><a href="Homepage.html #vendet">PLACES</a></li>
 					<li><a href="Contact.html">CONTACT</a></li>
 					<li><a href="About.html">ABOUT</a></li>
 				</ul>
@@ -195,10 +195,10 @@
 		    	slides[i].style.display = "none";
 		  	}
   			for (i = 0; i < dots.length; i++) {
-      			dots[i].className = dots[i].className.replace(" active", "");
+      			dots[i].className = dots[i].className.replace(" acctive", "");
   			}
   			slides[slideIndex-1].style.display = "block";
-  			dots[slideIndex-1].className += " active";
+  			dots[slideIndex-1].className += " acctive";
 			}
 	</script>
 </body>

@@ -174,5 +174,14 @@ footer #autori{
 	.navbar-links.active{
 		display: flex;
 	}
+
+
+	footer #logo-footer img{
+		height: 55px;
+	}
+	footer #rrjetet-sociale img{
+		margin-top: 15px;
+		height: 35px;
+	}
 }
 

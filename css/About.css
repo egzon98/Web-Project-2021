@@ -47,3 +47,23 @@
 .content-about #siperfaqja #numrat{
 	margin-left: 77px;
 }
+
+
+
+
+@media (max-width: 600px){
+	.content-about p{
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+	.content-about #flag{
+		margin-left: 50px;
+	}
+	.content-about #popullsia{
+		margin-left: 50px;
+	}
+	.content-about #siperfaqja{
+		margin-left: 50px;
+	}
+
+}
