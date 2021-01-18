@@ -8,43 +8,56 @@ body{
 	width: 100%;
 	margin: 0 auto;
 }
-nav{
-	background-color: #DCDCDC;
+.navbar{
 	display: flex;
-	text-align: center;
 	justify-content: space-between;
-
+	align-items: center;
 }
-nav img{
-	height:55px;
-	margin-top: 3px;
+.navbar .location img{
+	height: 60px;
 }
-nav #logo{
-	margin-left: 10px;
+.navbar .logo{
+	margin-top: 10px;
 }
-nav #location{
-	margin-right: 10px;
+.navbar .logo img{
+	height: 60px;
 }
-nav ul{
-	list-style-type: none;
-	margin-right: 50px;
-}
-
-nav li{
-	display: inline-block;
-	padding-right: 15px;
-	padding-left: 15px;
+.navbar-links ul{
+	color: white;
+	display: flex;
 	font-family: Kanit;
-	border-radius: 9px;
 }
-nav a li{
+.navbar-links li{
+	list-style: none;
+}
+.navbar-links li a{
 	text-decoration: none;
-	color:black;
+	color: black;
+	padding: 10px;
+	display: block;
 }
-nav a li:hover{
+.navbar-links li:hover{
 	background-color: black;
+}
+.navbar-links a:hover{
 	color: white;
 }
+.toggle-button{
+	display: none;
+	position: absolute;
+	right: 16px;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+}
+.toggle-button .bar{
+	height: 3px;
+	width: 100%;
+	background-color: black;
+	border-radius: 10px;
+}
+
 
 .content #background-kryesor{
 	width: 100%;
@@ -125,5 +138,41 @@ footer #rrjetet-sociale img{
 footer #autori{
 	margin-left: 25px;
 	color: white;
+}
+
+
+@media (max-width: 600px){
+	.content #background-kryesor {
+		height: 450px;
+	}
+	.logo img{
+		margin-top: 5px;
+	}
+	.location{
+		display: none;
+	}
+	.toggle-button{
+		margin-top: 25px;
+		display: flex;
+	}
+	.navbar-links{
+		display: none;
+		width: 100%;
+	}
+	.navbar{
+		flex-direction: column;
+	}
+	.navbar-links ul{
+		flex-direction: column;
+		width: 100%;
+		padding-left: 0;
+	}
+	.navbar-links li{
+		text-align: center;
+	}
+
+	.navbar-links.active{
+		display: flex;
+	}
 }
 
