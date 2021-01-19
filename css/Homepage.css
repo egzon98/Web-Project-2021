@@ -38,6 +38,7 @@ body{
 }
 .navbar-links li:hover{
 	background-color: black;
+	border-radius: 5px;
 }
 .navbar-links a:hover{
 	color: white;
