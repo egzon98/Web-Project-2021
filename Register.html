@@ -10,6 +10,7 @@
 		function validateForm(){
 			var emri = document.myForm.name.value;
 			var username = document.myForm.username.value;
+			var email = document.myForm.email.value;
 			var password = document.myForm.password.value;
 			var passwordC = document.myForm.passwordC.value;
 			if(emri == null || emri == ""){
@@ -18,6 +19,10 @@
 			}
 			if(username == null || username == ""){
 				alert("Write your username!");
+				return false;
+			}
+			if(email == null || email ==""){
+				alert("Write your email address!");
 				return false;
 			}
 			if(password == null || password == ""){
@@ -72,6 +77,9 @@
 					</div>
 					<div>
 						<input type="username" class="input-field" name="username" placeholder="Username">
+					</div>
+					<div>
+						<input type="email" class="input-field" name="email" placeholder="Email">
 					</div>
 					<div>
 						<input type="password" class="input-field" name="password" placeholder="Password">
