@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Albanian Beaches - Contact Page</title>
+	<title>Albanian Beaches - Register</title>
 	<link rel="stylesheet" type="text/css" href="css/Homepage.css">
-	<link rel="stylesheet" type="text/css" href="css/Contact.css">
+	<link rel="stylesheet" type="text/css" href="css/Register.css">
 	<script src="script.js" defer></script>
 
 	<script>
 		function validateForm(){
-			var name=document.myForm.emri.value;
-			var mail=document.myForm.imella.value;
-			var textbox=document.myForm.teksti.value;
-			if(name == null || name==""){
+			var emri = document.myForm.name.value;
+			var username = document.myForm.username.value;
+			var password = document.myForm.password.value;
+			var passwordC = document.myForm.passwordC.value;
+			if(emri == null || emri == ""){
 				alert("Write your name!");
 				return false;
-			}else if(mail == null || mail == ""){
-				alert("Write your mail!");
+			}
+			if(username == null || username == ""){
+				alert("Write your username!");
 				return false;
-			}else if(textbox == null || textbox == ""){
-				alert("Write your question!")
+			}
+			if(password == null || password == ""){
+				alert("Write your password!");
+				return false;
+			}
+			if(password.length < 8){
+				alert("Password must be at least 8 characters!");
+				return false;
+			}
+			if(passwordC != password){
+				alert("Password don't match, check again!");
 				return false;
 			}
 		}
 	</script>
 </head>
+
 <body>
 	<div class="container">
 		<nav class="navbar">
@@ -51,41 +63,32 @@
 		</nav>
 
 
-		<div class="content-contact">
-			
-			<h2 id="contact-title">Want to know more?</h2>
-			<div class="contact-box">
+		<div class="register-content">
+			<h2 id="content-title">Create an account</h2>
+			<div class="register-box">
 				<form name="myForm" method="POST" onsubmit="return validateForm()">
-				<div>
-					<input type="text" class="input-field" name="emri" placeholder="Your name">
-				</div>
-				<div>
-					<input type="email" class="input-field" name="imella" placeholder="Your mail">
-				</div>
-				<div>
-					<p>Where are you from? </p>
-					<input type="radio" name="vendi">Kosova
-					<input type="radio" name="vendi">Albania
-					<input type="radio" name="vendi" checked>Other
-				</div>
-				<div>
-					<textarea class="input-field textarea-field" name="teksti" placeholder="Your message or question..."></textarea>
-				</div>
-				<div>
-					<p>Do you like our page? (optional)</p>
-					<input type="checkbox" name="like">Yes
-					<input type="checkbox" name="like">No
-				</div>
-				<div>
-					<button class="button" type="submit" name="" >Send your question</button>
-				</div>
+					<div>
+						<input type="text" class="input-field" name="name" placeholder="Full name">
+					</div>
+					<div>
+						<input type="username" class="input-field" name="username" placeholder="Username">
+					</div>
+					<div>
+						<input type="password" class="input-field" name="password" placeholder="Password">
+					</div>
+					<div>
+						<input type="password" class="input-field" name="passwordC" placeholder="Confirm your password">
+					</div>
+					<div>
+						<button class="button" type="submit" name="" >Register</button>
+					</div>
 				</form>
+				<div>
+					<p id="login">I already have an account!<a href="Login.html"> Login now</a></p>
+				</div>
+				
 			</div>
-
-
 		</div>
-
-
 
 		<footer>
 			<div id="logo-footer">
@@ -105,5 +108,8 @@
 		</footer>
 	</div>
 
+
+
 </body>
+
 </html>
