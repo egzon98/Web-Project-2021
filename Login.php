@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Albanian Beaches - Register</title>
+	<title>Albanian Beaches - Login</title>
 	<link rel="stylesheet" type="text/css" href="css/Homepage.css">
-	<link rel="stylesheet" type="text/css" href="css/Register.css">
+	<link rel="stylesheet" type="text/css" href="css/Login.css">
 	<script src="script.js" defer></script>
 
 	<script>
 		function validateForm(){
-			var emri = document.myForm.name.value;
 			var username = document.myForm.username.value;
-			var email = document.myForm.email.value;
 			var password = document.myForm.password.value;
-			var passwordC = document.myForm.passwordC.value;
-			if(emri == null || emri == ""){
-				alert("Write your name!");
-				return false;
-			}
+
 			if(username == null || username == ""){
 				alert("Write your username!");
-				return false;
-			}
-			if(email == null || email ==""){
-				alert("Write your email address!");
 				return false;
 			}
 			if(password == null || password == ""){
@@ -31,10 +21,6 @@
 			}
 			if(password.length < 8){
 				alert("Password must be at least 8 characters!");
-				return false;
-			}
-			if(passwordC != password){
-				alert("Password don't match, check again!");
 				return false;
 			}
 		}
@@ -54,11 +40,11 @@
 			</a>
 			<div class="navbar-links">
 				<ul>
-					<li><a href="Homepage.html">HOME</a></li>
-					<li><a href="#vendet">PLACES</a></li>
-					<li><a href="Contact.html">CONTACT</a></li>
-					<li><a href="About.html">ABOUT</a></li>
-					<li><a href="Login.html">LOGIN</a></li>
+					<li><a href="Index.php">HOME</a></li>
+					<li><a href="Index.php">PLACES</a></li>
+					<li><a href="Contact.php">CONTACT</a></li>
+					<li><a href="About.php">ABOUT</a></li>
+					<li><a href="Login.php">LOGIN</a></li>
 
 				</ul>
 			</div>
@@ -68,31 +54,22 @@
 		</nav>
 
 
-		<div class="register-content">
-			<h2 id="content-title">Create an account</h2>
-			<div class="register-box">
-				<form action="connect.php" name="myForm" method="post" onsubmit="return validateForm()">
-					<div>
-						<input type="text" class="input-field" name="name" placeholder="Full name">
-					</div>
+		<div class="login-content">
+			<h2 id="content-title">Login</h2>
+			<div class="login-box">
+				<form name="myForm" method="POST" onsubmit="return validateForm()">
 					<div>
 						<input type="username" class="input-field" name="username" placeholder="Username">
-					</div>
-					<div>
-						<input type="email" class="input-field" name="email" placeholder="Email">
 					</div>
 					<div>
 						<input type="password" class="input-field" name="password" placeholder="Password">
 					</div>
 					<div>
-						<input type="password" class="input-field" name="passwordC" placeholder="Confirm your password">
-					</div>
-					<div>
-						<button class="button" type="submit" name="" >Register</button>
+						<button class="button" type="submit" name="" >Sign in</button>
 					</div>
 				</form>
 				<div>
-					<p id="login">I already have an account!<a href="Login.html"> Login now</a></p>
+					<p id="register">I don't have an account!<a href="Register.php"> Create now</a></p>
 				</div>
 				
 			</div>

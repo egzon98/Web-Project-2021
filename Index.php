@@ -1,3 +1,8 @@
+<?php require 'includes/connect.php'; 
+
+$query = $pdo->query('SELECT * from posts LIMIT 6');
+$posts = $query->fetchAll();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +12,8 @@
 </head>
 <body>
 	<div class="container">
+
+		<!-- NAVBAR -->
 		<nav class="navbar">
 			<div class="logo">
 				<img src="images/eagle.png">
@@ -18,11 +25,11 @@
 			</a>
 			<div class="navbar-links">
 				<ul>
-					<li><a href="Homepage.html">HOME</a></li>
+					<li><a href="Index.php">HOME</a></li>
 					<li><a href="#vendet">PLACES</a></li>
-					<li><a href="Contact.html">CONTACT</a></li>
-					<li><a href="About.html">ABOUT</a></li>
-					<li><a href="Login.html">LOGIN</a></li>
+					<li><a href="Contact.php">CONTACT</a></li>
+					<li><a href="About.php">ABOUT</a></li>
+					<li><a href="Login.php">LOGIN</a></li>
 
 				</ul>
 			</div>
@@ -31,43 +38,19 @@
 			</div>
 		</nav>
 
+		<!-- KONTEKTI -->
 		<div class="content">
 			<img id="background-kryesor" src="images/HomeBackground.jpg">
 			<h1 id="welcome-title">Welcome to Albania</h1>
 
 			<div id="vendet">
-				<div id="paragrafi1">
-					<h3>Durrës</h3>
-					<img src="images/Durresi.jpg">
-					<a href="Durresi.html"><p>Learn more about Durrësi's beach...</p></a>
-				</div>
-				<div id="paragrafi2">
-					<h3>Velipojë</h3>
-					<img src="images/Velipoja.jpg">
-					<a href=""><p>Learn more about Velipoja's beach...</p></a>
-				</div>
-				<div id="paragrafi3">
-					<h3>Ksamil</h3>
-					<img src="images/Ksamil.jpg">
-					<a href=""><p>Learn more about Ksamil's beach...</p></a>
-				</div>
-			</div>
-			<div id="vendet2">
-				<div id="paragrafi4">
-					<h3>Jalë</h3>
-					<img src="images/Jala.jpg">
-					<a href=""><p>Learn more about Jala's beach...</p></a>
-				</div>
-				<div id="paragrafi5">
-					<h3>Dhërmi</h3>
-					<img src="images/Dhermi.jpg">
-					<a href=""><p>Learn more about Dhërmia's beach...</p></a>
-				</div>
-				<div id="paragrafi6">
-					<h3>Saranda</h3>
-					<img src="images/Saranda.jpg">
-					<a href=""><p>Learn more about Saranda's beach...</p></a>
-				</div>
+				<?php foreach($posts as $post): ?>
+					<div id="paragrafi1">
+						<h3><?php echo $post['post_title']; ?></h3>
+						<img src="images/<?php echo $post['post_image']; ?>">
+						<a href="Durresi.php"><p><?php echo $post['post_description']; ?></p></a>
+					</div>
+				<?php endforeach;  ?>
 			</div>
 		</div>
 

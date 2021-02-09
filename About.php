@@ -19,11 +19,11 @@
 			</a>
 			<div class="navbar-links">
 				<ul>
-					<li><a href="Homepage.html">HOME</a></li>
-					<li><a href="#vendet">PLACES</a></li>
-					<li><a href="Contact.html">CONTACT</a></li>
-					<li><a href="About.html">ABOUT</a></li>
-					<li><a href="Login.html">LOGIN</a></li>
+					<li><a href="Index.php">HOME</a></li>
+					<li><a href="Index.php">PLACES</a></li>
+					<li><a href="Contact.php">CONTACT</a></li>
+					<li><a href="About.php">ABOUT</a></li>
+					<li><a href="Login.php">LOGIN</a></li>
 
 				</ul>
 			</div>
