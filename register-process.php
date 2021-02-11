@@ -6,7 +6,7 @@
 	$password = $_POST['password'];
 	$passwordC = $_POST['passwordC'];
 
-	//Lidhja me databaze;
+
 	if(!empty($name) || !empty($username) || !empty($email) || !empty($password) || !empty($passwordC)){
 		$host = "localhost";
 		$dbUsername = "root";

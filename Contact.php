@@ -55,7 +55,7 @@
 			
 			<h2 id="contact-title">Want to know more?</h2>
 			<div class="contact-box">
-				<form name="myForm" method="POST" onsubmit="return validateForm()">
+				<form action="contact-process.php" name="myForm" method="POST" onsubmit="return validateForm()">
 				<div>
 					<input type="text" class="input-field" name="emri" placeholder="Your name">
 				</div>
@@ -64,9 +64,9 @@
 				</div>
 				<div>
 					<p>Where are you from? </p>
-					<input type="radio" name="vendi">Kosova
-					<input type="radio" name="vendi">Albania
-					<input type="radio" name="vendi" checked>Other
+					<input type="radio" name="vendi" value="Kosova">Kosova
+					<input type="radio" name="vendi" value="Albania">Albania
+					<input type="radio" name="vendi" value="Other" checked>Other
 				</div>
 				<div>
 					<textarea class="input-field textarea-field" name="teksti" placeholder="Your message or question..."></textarea>
