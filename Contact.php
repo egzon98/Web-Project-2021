@@ -73,8 +73,8 @@
 				</div>
 				<div>
 					<p>Do you like our page? (optional)</p>
-					<input type="checkbox" name="like">Yes
-					<input type="checkbox" name="like">No
+					<input type="checkbox" name="like" value="Yes">Yes
+					<input type="checkbox" name="like" value="No">No
 				</div>
 				<div>
 					<button class="button" type="submit" name="" >Send your question</button>
