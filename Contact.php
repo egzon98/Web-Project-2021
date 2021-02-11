@@ -38,7 +38,7 @@
 			<div class="navbar-links">
 				<ul>
 					<li><a href="Index.php">HOME</a></li>
-					<li><a href="Index.php">PLACES</a></li>
+					<li><a href="Index.php #welcome-title">PLACES</a></li>
 					<li><a href="Contact.php">CONTACT</a></li>
 					<li><a href="About.php">ABOUT</a></li>
 					<li><a href="Login.php">LOGIN</a></li>

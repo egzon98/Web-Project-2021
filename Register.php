@@ -55,7 +55,7 @@
 			<div class="navbar-links">
 				<ul>
 					<li><a href="Index.php">HOME</a></li>
-					<li><a href="Index.php">PLACES</a></li>
+					<li><a href="Index.php #welcome-title">PLACES</a></li>
 					<li><a href="Contact.php">CONTACT</a></li>
 					<li><a href="About.php">ABOUT</a></li>
 					<li><a href="Login.php">LOGIN</a></li>
@@ -71,7 +71,7 @@
 		<div class="register-content">
 			<h2 id="content-title">Create an account</h2>
 			<div class="register-box">
-				<form action="connect.php" name="myForm" method="post" onsubmit="return validateForm()">
+				<form action="register-process.php" name="myForm" method="post" onsubmit="return validateForm()">
 					<div>
 						<input type="text" class="input-field" name="name" placeholder="Full name">
 					</div>
