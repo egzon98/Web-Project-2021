@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Albanian Beaches - Durrësi</title>
+	<link rel = "icon" href = "images/eagle.png" type = "image/x-icon"> 
 	<link rel="stylesheet" type="text/css" href="css/Homepage.css">
 	<link rel="stylesheet" type="text/css" href="css/Durresi.css">
 	<script src="script.js" defer></script>

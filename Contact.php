@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Albanian Beaches - Contact Page</title>
+	<link rel = "icon" href = "images/eagle.png" type = "image/x-icon"> 
 	<link rel="stylesheet" type="text/css" href="css/Homepage.css">
 	<link rel="stylesheet" type="text/css" href="css/Contact.css">
 	<script src="script.js" defer></script>

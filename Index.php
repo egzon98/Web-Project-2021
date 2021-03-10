@@ -9,6 +9,7 @@ $posts = $query->fetchAll();
 	<link rel="stylesheet" type="text/css" href="css/Homepage.css">
 	<script src="script.js" defer></script>
 	<title>Albanian Beaches - Visit Albania</title>
+		<link rel = "icon" href = "images/eagle.png" type = "image/x-icon"> 
 </head>
 <body>
 	<div class="container">

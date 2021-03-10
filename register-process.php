@@ -38,9 +38,10 @@
 				$stmt->bind_param("sssss", $name, $username, $email, $password, $passwordC);
 				$stmt->execute();
 					// echo "You are registered successfully!";
-				header('Location: Index.php');
+				header('Location: Login.php');
 			}else{
-				echo "Someone already registered with this email address!";
+				echo '<script>alert("Someone already registered with this email address!")</script>'; 
+				//echo "Someone already registered with this email address!";
 			}
 			$stmt->close();
 			$conn->close();

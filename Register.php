@@ -1,7 +1,11 @@
+<? php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Albanian Beaches - Register</title>
+	<link rel = "icon" href = "images/eagle.png" type = "image/x-icon"> 
 	<link rel="stylesheet" type="text/css" href="css/Homepage.css">
 	<link rel="stylesheet" type="text/css" href="css/Register.css">
 	<script src="script.js" defer></script>
@@ -121,3 +125,4 @@
 </body>
 
 </html>
+

@@ -2,12 +2,13 @@
 <html>
 <head>
 	<title>Albanian Beaches - Login</title>
+	<link rel = "icon" href = "images/eagle.png" type = "image/x-icon"> 
 	<link rel="stylesheet" type="text/css" href="css/Homepage.css">
 	<link rel="stylesheet" type="text/css" href="css/Login.css">
 	<script src="script.js" defer></script>
 
 	<script>
-		function validateForm(){
+		function validateLogin(){
 			var username = document.myForm.username.value;
 			var password = document.myForm.password.value;
 
@@ -57,9 +58,9 @@
 		<div class="login-content">
 			<h2 id="content-title">Login</h2>
 			<div class="login-box">
-				<form name="myForm" method="POST" onsubmit="return validateForm()">
+				<form action="login-process.php" name="myForm" method="POST" onsubmit="return validateLogin()">
 					<div>
-						<input type="username" class="input-field" name="username" placeholder="Username">
+						<input type="mail" class="input-field" name="email" placeholder="Email">
 					</div>
 					<div>
 						<input type="password" class="input-field" name="password" placeholder="Password">
