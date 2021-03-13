@@ -41,7 +41,9 @@
 			<form action="dashboard-process.php" name="myForm" method="post">
 				<input class="input-field" type="textbox" name="title" placeholder="Title">
 				<input class="input-field" type="textbox" name="image" placeholder="Image URL">
+				<input class="input-field" type="textbox" name="link" placeholder="Post link">
 				<input class="input-field" type="textbox" name="description" placeholder="Description">
+
 				<button class="button" type="submit" name="" >Post</button>
 			</form>
 		</nav>

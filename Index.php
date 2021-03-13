@@ -49,7 +49,7 @@ $posts = $query->fetchAll();
 					<div id="paragrafi1">
 						<h3><?php echo $post['post_title']; ?></h3>
 						<img src="images/<?php echo $post['post_image']; ?>">
-						<a href="Durresi.php"><p><?php echo $post['post_description']; ?></p></a>
+						<a href="<?php echo $post['post_link']; ?>"><p><?php echo $post['post_description']; ?></p></a>
 					</div>
 				<?php endforeach;  ?>
 			</div>

@@ -3,8 +3,8 @@
 	$name = $_POST['name'];
 	$username = $_POST['username'];
 	$email = $_POST['email'];
-	$password = $_POST['password'];
-	$passwordC = $_POST['passwordC'];
+	$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+	$passwordC = password_hash($_POST['passwordC'], PASSWORD_BCRYPT);
 
 
 	if(!empty($name) || !empty($username) || !empty($email) || !empty($password) || !empty($passwordC)){

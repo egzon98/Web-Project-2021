@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+#content-title{
+	text-align: center;
+	font-family: Kanit;
+}
+
+.content-velipoja #tregimi{
+	margin-left: 120px;
+	margin-right: 120px;
+	text-align: center;
+}
+#map-velipoje{
+	text-align: center;
+}

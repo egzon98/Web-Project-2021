@@ -9,11 +9,11 @@
 
 	<script>
 		function validateLogin(){
-			var username = document.myForm.username.value;
+			var email = document.myForm.email.value;
 			var password = document.myForm.password.value;
 
-			if(username == null || username == ""){
-				alert("Write your username!");
+			if(email == null || email == ""){
+				alert("Write your email!");
 				return false;
 			}
 			if(password == null || password == ""){
@@ -60,7 +60,7 @@
 			<div class="login-box">
 				<form action="login-process.php" name="myForm" method="POST" onsubmit="return validateLogin()">
 					<div>
-						<input type="mail" class="input-field" name="email" placeholder="Email">
+						<input type="email" class="input-field" name="email" placeholder="Email">
 					</div>
 					<div>
 						<input type="password" class="input-field" name="password" placeholder="Password">
